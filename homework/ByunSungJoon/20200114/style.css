@@ -3,8 +3,7 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 body {
-  width: 1920px;
-  margin: 0;
+  width: 100%;
 }
 .fa-comment {
   color: white;
@@ -13,21 +12,20 @@ body {
 /*Header*/
 
 #header {
+  display: flex;
   height: 120px;
 }
 
 .home_titile {
-  float: left;
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 57px;
+  flex-grow: 1;
+  padding-top: 20px;
+  padding-left: 57px;
 }
 
 .nav_lists {
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 98px;
-  padding-top: 27px;
+  display: flex;
+  flex-grow: 3;
+  align-items: center;
   font-size: 20px;
   font-weight: bold;
 }
@@ -36,7 +34,9 @@ body {
   display: inline-block;
   margin-right: 30px;
 }
-
+.button_wrapper {
+  flex-grow: 2;
+}
 .header_inquire {
   float: right;
   margin-top: 32px;
@@ -70,7 +70,6 @@ body {
   .main_titile {
     font-size: 30px;
   }
-
 }
 #main {
   height: 1060px;
@@ -81,7 +80,7 @@ body {
 
 .main_wrapper {
   float: left;
-  width: 1900px;
+  width: 100%;
   height: 235px;
 }
 
@@ -162,7 +161,7 @@ body {
 /*Service*/
 
 #service {
-  width: 1920px;
+  width: 100%;
   height: 1070px;
   background-image: url(../img/photo-background-3.jpg);
   background-repeat: no-repeat;
@@ -239,7 +238,7 @@ body {
 }
 .merit_wrapper {
   float: left;
-  width: 1200px;
+  width: 100%;
   height: 720px;
   margin-top: 320px;
 }
