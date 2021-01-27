@@ -35,10 +35,11 @@ body {
   margin-right: 30px;
 }
 .button_wrapper {
+  display: flex;
+  flex-direction: row-reverse;
   flex-grow: 2;
 }
 .header_inquire {
-  float: right;
   margin-top: 32px;
   margin-right: 52px;
   width: 200px;
@@ -59,7 +60,7 @@ body {
 }
 
 /*Main*/
-@media (max-width: 300px) {
+@media (max-width: 550px) {
   .main_wrapper {
     display: flex;
     flex-direction: column;
@@ -72,38 +73,46 @@ body {
   }
 }
 #main {
-  height: 1060px;
+  height: 100vh;
   background-image: url(../img/photo-background-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
 .main_wrapper {
-  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 235px;
+  height: 400px;
 }
 
 .main_titile {
   color: white;
   font-size: 70px;
   font-weight: 550;
-  margin-top: 390px;
+  line-height: 80px;
   margin-left: 80px;
+  margin-bottom: 50px;
 }
 
 .main_inquire {
-  float: left;
   width: 270px;
   height: 80px;
   margin-left: 80px;
   background-color: #eb5c27;
   border: none;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #main .fa-comment {
   font-size: 28px;
+  padding-right: 5px;
 }
 
 .main_inquire_content {
